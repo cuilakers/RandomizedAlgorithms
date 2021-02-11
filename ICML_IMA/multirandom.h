@@ -26,7 +26,7 @@ bool cmp(const Ai &a,const Ai &b)
 }
 pair<int,double> GetMax(const int max_image,long long int &oracle_times,double eps,vector<Ai> &A,S_gamma &Si,const vector<int> &avaiable)
 {
-    double eta=0.1;
+    double eta=1.0;
     double eps_apostrophe=eta*eps;
     for(auto e=A.begin();e!=A.end();)//remove unfeasible element
     {
@@ -101,7 +101,7 @@ pair<double,long long int> multi_random_acc(double eps,int max_image)
     vector<S_gamma> S;
     vector<vector<Ai>> A;
     int ell=2;
-    p=1.0;
+    //p=1.0;
     //ell=1;
     for(int i=0;i<ell;i++) {
         S.push_back(S_gamma());
