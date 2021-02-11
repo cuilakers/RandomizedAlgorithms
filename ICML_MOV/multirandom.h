@@ -26,7 +26,7 @@ bool cmp(const Ai &a,const Ai &b)
 }
 pair<int,double> GetMax(const int max_movie,dataset* data,long long int &oracle_times,double eps,vector<Ai> &A,S_gamma &Si,const vector<int> &avaiable)
 {
-    double eta=0.1;
+    double eta=1.0;
     double eps_apostrophe=eta*eps;
     for(auto e=A.begin();e!=A.end();)//remove unfeasible element
     {
@@ -92,7 +92,7 @@ pair<double,long long int> multi_random_acc(double eps,dataset* data,int m)
     double p=2.0/(1.0+sqrt((float)k));
     //p=1.0;
     bernoulli_distribution u(p);
-    default_random_engine e(1);
+    default_random_engine e(12345);
     //default_random_engine e((unsigned)time(NULL));
 
     int node_num=data->index.size();
