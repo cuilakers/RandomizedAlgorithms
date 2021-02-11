@@ -74,7 +74,7 @@ pair<pair<int,int>,double> GetMax(const int per_product_max,long long int &oracl
     int r=per_product_max*product_types;
     for(auto e=A.begin();e!=A.end();)
     {
-        if((*e).l>(log((float)r/eps_apostrophe)/log(1.0+eps_apostrophe)))
+        if((*e).l>(log((float)r*2.0/eps_apostrophe)/log(1.0+eps_apostrophe)))
         {
             e=A.erase(e);
         }
