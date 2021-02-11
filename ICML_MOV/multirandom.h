@@ -75,7 +75,7 @@ pair<int,double> GetMax(const int max_movie,dataset* data,long long int &oracle_
     //}
     for(auto e=A.begin();e!=A.end();)
     {
-        if((*e).l>(log(max_movie/eps_apostrophe)/log(1.0+eps_apostrophe)))
+        if((*e).l>(log(max_movie*2.0/eps_apostrophe)/log(1.0+eps_apostrophe)))
         {
             e=A.erase(e);
         }
