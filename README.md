@@ -3,7 +3,7 @@
 * **Compilation**
 
 ```setup
-cd TwinGreedy_MPVM
+cd ICML_MOV
 ```
 
 ```setup
@@ -19,7 +19,7 @@ make
 > Run the program on the example data set
 
 ```setup
-./TwinGreedy -c config_example.txt
+./ICML_MOV 0.1
 ```
 
 ## Application2: Image Summarization
@@ -27,26 +27,7 @@ make
 * **Compilation**
 
 ```setup
-cd TwinGreedy_SNM
-```
-
-```setup
-make
-```
-
-* **Run**
-
-> Run the program on the example random graph
-
-```setup
-./example.sh
-```
-## Application3: Social Advertising with Multiple Products
-
-* **Compilation**
-
-```setup
-cd TwinGreedy_MPVM
+cd ICML_IMA
 ```
 
 ```setup
@@ -62,5 +43,29 @@ make
 > Run the program on the example data set
 
 ```setup
-./TwinGreedy -c config_example.txt
+./ICML_IMA 0.1
+```
+
+## Application3: Social Advertising with Multiple Products
+
+* **Compilation**
+
+```setup
+cd ICML_REV
+```
+
+```setup
+cmake .
+```
+
+```setup
+make
+```
+
+* **Run** 
+
+> Run the program on the example data set
+
+```setup
+./ICML_REV 0.1
 ```
