@@ -26,7 +26,7 @@ bool cmp(const Ai &a,const Ai &b)
 }
 pair<pair<int,int>,double> GetMax(const int per_product_max,long long int &oracle_times,double eps,vector<Ai> &A,S_class &Si,const vector<vector<int>> &avaiable)
 {
-    double eta=0.1;
+    double eta=1.0;
     double eps_apostrophe=eta*eps;
     for(auto e=A.begin();e!=A.end();)//remove unfeasible element
     {
